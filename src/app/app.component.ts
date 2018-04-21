@@ -23,4 +23,11 @@ export class AppComponent {
       content: serverData.serverContent
     });
   }
+
+  onChangeFirst(){
+    this.serverElements[0].name = "changed value";
+  }
+  onDestroyFirst(){
+    this.serverElements.splice(0,1);
+  }
 }
